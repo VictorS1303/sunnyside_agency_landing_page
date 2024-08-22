@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:600');
+@import url('https://fonts.googleapis.com/css?family=Fraunces:700, 900');
+
+:root
+{
+    /* Color */
+    --hero-text-color: #fff;
+    --article-heading-color: #23303e;
+    --article-paragraph-color:  #818498;
+    --learn-more-button-text-color: #23303e;
+    --graphic-design-section-text-color: #818498;
+    --photography-section-text-color: #818498;
+    --testimonials-section-heading-color:#5a636c;
+    --testimonial-card-name-color: #23303e;
+    --testimonial-card-description-text-color: #5a636c;
+    --testimonial-card-profession-text-color: #818498;
+    --footer-background-color: #818498;
+    --footer-header-text-color: #5a636c;
+    --footer-link-text-color: #818498;
+
+    /* Radii */
+    --base-border-radius: 10px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, a
+{
+    font-family: 'Fraunces', sans-serif;
+}
+
+p
+{
+    font-family: 'Barlow', sans-serif;
+}
+
+img
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
