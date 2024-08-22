@@ -8,6 +8,7 @@
     --article-heading-color: #23303e;
     --article-paragraph-color:  #818498;
     --learn-more-button-text-color: #23303e;
+    --learn-more-button-text-hover-color: #c2b280;
     --graphic-design-section-text-color: #818498;
     --photography-section-text-color: #818498;
     --testimonials-section-heading-color:#5a636c;
@@ -39,6 +40,7 @@ li
 
 a
 {
+    display: inline;
     text-decoration: none;
 }
 
@@ -95,4 +97,59 @@ section.hero header
 section.hero header svg
 {
     margin-top: 50px;
+}
+
+/* Section: Articles */
+section.articles .card
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+section.articles .card img
+{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-desc-container
+{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    height: 50%;
+    padding: 30px;
+}
+
+.card-desc-container header 
+{
+    color: var(--article-heading-color);
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.card-desc-container p
+{
+    margin: 30px 0;
+    color: var(--article-paragraph-color);
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.card-desc-container a
+{
+    color: var(--learn-more-button-text-color);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color .15s ease-in;
+}
+
+
+.card-desc-container a:hover
+{
+    color: var(--learn-more-button-text-hover-color);
+    transition: color .15s ease-in;
 }
